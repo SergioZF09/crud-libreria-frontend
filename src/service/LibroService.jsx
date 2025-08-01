@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL_LIBRO_API = "https://crud-libros-iapg.onrender.com/api/v1/libros";
+const BASE_URL_LIBRO_API = import.meta.env.VITE_API_URL + "/api/v1/libros";
 
 class LibroService {
   registrarLibro(libro) {
