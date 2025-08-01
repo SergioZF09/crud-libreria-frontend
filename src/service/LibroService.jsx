@@ -12,15 +12,15 @@ class LibroService {
   }
 
   obtenerLibro(id) {
-    return axios.get(BASE_URL_LIBRO_API + "/" + id);
+    return axios.get(`${BASE_URL_LIBRO_API}/${id}`);
   }
 
   actualizarLibro(id, libro) {
-    return axios.put(BASE_URL_LIBRO_API + "/" + id, libro);
+    return axios.put(`${BASE_URL_LIBRO_API}/${id}`, libro);
   }
 
   eliminarLibro(id) {
-    return axios.delete(BASE_URL_LIBRO_API + "/" + id);
+    return axios.delete(`${BASE_URL_LIBRO_API}/${id}`);
   }
 }
 
